@@ -46,6 +46,7 @@ public class AntiAFKPro extends JavaPlugin {
 
         // Register commands
         this.getCommand("playtime").setExecutor(this.commandHandler);
+        this.getCommand("afk").setExecutor(this.commandHandler);
 
         //Register Events
         getServer().getPluginManager().registerEvents(this.leaveJoinListeners,this);
